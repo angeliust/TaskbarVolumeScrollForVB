@@ -1,7 +1,8 @@
 # Mouse Wheel to Voicemeeter
 To control Voicemeeter virtual inputs volumes from mouse wheel over Taskbar.
 
-<img src="(https://i.imgur.com/TVbvvDW.png)" width="48">
+<a href="url"><img src="https://i.imgur.com/TVbvvDW.png" align="left" height="48" width="48" ></a>
+
 This is an AutoHotKey script to control volume strips (virtual inputs) from Voicemeeter (https://vb-audio.com/Voicemeeter/) scrolling mouse wheel over Windows Taskbar.
 
 
