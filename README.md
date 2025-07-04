@@ -1,62 +1,40 @@
-# Taskbar Volume Scroll for Voicemeeter Banana
+# Mouse Wheel to Voicemeeter
+To control Voicemeeter virtual inputs volumes from mouse wheel over Taskbar.
 
-A minimalist AutoHotkey script to control Voicemeeter Banana's virtual input volumes by scrolling the mouse wheel over the Windows taskbar. It provides a clean, text-only OSD (On-Screen Display) to show the current volume percentage.
-
-This project is a fork of the original "Mouse Wheel to Voicemeeter" script, modified to provide a more modern and minimalist user experience.
+This is an AutoHotKey script to control volume strips (virtual inputs) from Voicemeeter (https://vb-audio.com/Voicemeeter/) scrolling mouse wheel over Windows Taskbar.
 
 
-*(Feel free to replace this with your own screenshot)*
+Voicemeeter
 
-## Features
+The initial Voicemeeter version has one virtual inputs, then taskbar will have a single whole area from where you can scroll wheel mouse to control audio volume.
+So you can control its volume from anywhere in taskbar.
 
-*   **Minimalist UI:** A clean, floating text display shows only the volume percentage.
-*   **Taskbar Zones:** Your taskbar is divided into zones, allowing you to control different Voicemeeter virtual inputs based on your mouse's horizontal position.
-*   **Adjustable Sensitivity:** Customize the "slow" and "fast" scroll speeds to fit your preference.
-*   **Lightweight:** The script is optimized for low resource usage and instant responsiveness.
-*   **Plug and Play:** Simply run the script alongside Voicemeeter.
+Voicemeeter Banana
 
-## Requirements
+Since the second Voicemeeter version has two virtual inputs, you taskbar will have two areas (left and right) from where you can scroll wheel mouse to control audio volumes.
+You can control the first virtual input volume from left side of taskbar, control the second virtual input volume from the right side of taskbar.
 
-1.  **Voicemeeter Banana** (or Potato) installed and running.
-2.  **AutoHotkey v1.1** installed. You can download it from the [official AutoHotkey website](https://www.autohotkey.com/).
-3.  The **`VMR.ahk` library** by SaifAqqad. This is included in this repository for convenience.
 
-## Installation
+Voicemeeter Potato
 
-1.  Click the green **`< > Code`** button on this repository's main page and select **`Download ZIP`**.
-2.  Extract the ZIP file to a permanent location on your computer (e.g., `C:\Scripts\VoicemeeterScroll`).
-3.  Ensure that `Taskbar-Volume-Scroll.ahk` (or whatever you name the main script) and `VMR.ahk` are in the **same folder**.
-4.  Run Voicemeeter Banana.
-5.  Run the script by double-clicking `Taskbar-Volume-Scroll.ahk`. A new "H" icon will appear in your system tray.
+Since the third Voicemeeter version has three virtual inputs, you taskbar will have three areas (left, center and right) from where you can scroll wheel mouse to control audio volumes.
+You can control the first virtual input volume from left side of taskbar, control the second virtual input volume from the center of taskbar and control the third virtual input volume from the right side of taskbar.
 
-To have the script run automatically when your computer starts, right-click the tray icon and select **"Start on Boot"**.
 
-## Usage
+It will automatically detect Voicemeeter version currently running and apply the number of areas accordingly.
 
-1.  Move your mouse cursor over your main or secondary Windows taskbar.
-2.  Scroll the mouse wheel up or down.
-3.  The volume for the corresponding virtual input will change, and a small percentage indicator will appear above your cursor.
 
-### Fader Zones
+How to use
 
-The script divides your taskbar's width into equal zones based on how many virtual inputs your version of Voicemeeter has.
+Just download all files from this repository into the same folder (directory). No install needed. Run 'Mouse Wheel to Voicemeeter.exe' program. It will place a system tray icon from where you will have some usefull options.
 
-*   **For Voicemeeter Banana:**
-    *   The left half of the taskbar controls **Virtual Input 1**.
-    *   The right half of the taskbar controls **Virtual Input 2**.
-*   **For Voicemeeter Potato:** The taskbar is divided into thirds for the three virtual inputs.
 
-## Customization
 
-You can easily edit the script to change its behavior. Right-click the `.ahk` file and select "Edit Script".
 
-### Scroll Sensitivity
+Credits to:
 
-To make the volume change faster or slower, adjust the `gainsteps` values at the top of the script. The values are in decibels (dB).
+VMR AHK https://github.com/SaifAqqad/VMR.ahk
 
-```autohotkey
-; Slow steps for changing volume (in dB). Increased for more "sensibility".
-gainsteps1 := 3.0
+trismarck code from here: https://www.autohotkey.com/board/topic/96139-detect-screen-edges-two-monitors/
 
-; Fast steps for changing volume (in dB).
-gainsteps2 := 5.0
+Voicemeeter by Vincent Burel
