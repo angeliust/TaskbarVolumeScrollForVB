@@ -1,6 +1,6 @@
 # Mouse Wheel to Voicemeeter
 To control Voicemeeter virtual inputs volumes from mouse wheel over Taskbar.
-
+![Taskbar Volume Scroll Logo](https://i.imgur.com/TVbvvDW.png)
 This is an AutoHotKey script to control volume strips (virtual inputs) from Voicemeeter (https://vb-audio.com/Voicemeeter/) scrolling mouse wheel over Windows Taskbar.
 
 
@@ -38,3 +38,12 @@ VMR AHK https://github.com/SaifAqqad/VMR.ahk
 trismarck code from here: https://www.autohotkey.com/board/topic/96139-detect-screen-edges-two-monitors/
 
 Voicemeeter by Vincent Burel
+
+Credits and Acknowledgements
+This project would not be possible without the foundational work of others in the community.
+Original Author: This script is a direct fork and modification of "Mouse Wheel to Voicemeeter" by Melo (melo@meloprofessional.com).
+Voicemeeter API Library: It relies entirely on the excellent VMR.ahk library created by SaifAqqad.
+Taskbar Detection: The robust MouseIsOverTaskbar() function concept was adapted from a forum post by trismarck.
+Modifications and AI Assistance: The extensive modifications, UI/UX changes, and iterative debugging to create this specific version were developed with the assistance of Google AI Studio.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
